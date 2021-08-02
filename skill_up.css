@@ -64,7 +64,7 @@ header {
   font-size: 20px;
 }
 
-#portfolio {
+#portfolio, #profile {
   background-color: #ECEFF1;
 }
 
@@ -148,6 +148,10 @@ header {
   font-size: 60px;
 }
 
+.strength:last-child {
+  margin-right: 0;
+}
+
 .fa-code:before {
   content: "\f121";
 }
@@ -163,5 +167,38 @@ header {
 
 .strength-text {
   text-align: left;
+  font-size: 16px;
+}
+
+.profile-group {
+  display: flex;
+  padding: 30px 0 90px 0;
+}
+
+.left-content {
+  width: 50%;
+}
+
+.my-face{
+  background-image: url(img/my-icon.jpg);
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.right-content {
+  width: 50%;
+}
+
+.description-title {
+  font-size: 20px;
+  margin: 20px 0 5px 0;
+}
+.description-title:first-child {
+  margin-top: 0;
+}
+
+.description-text {
   font-size: 16px;
 }
