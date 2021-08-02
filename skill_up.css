@@ -50,7 +50,7 @@ header {
   height: 650px;
   background-image: url(img/mv.png);
   text-align: center;
-  color: #FAFAFA;
+  color: #fafafa;
   background-size: cover;
   background-position: center;
 }
@@ -64,14 +64,15 @@ header {
   font-size: 20px;
 }
 
-#portfolio, #profile {
-  background-color: #ECEFF1;
+#portfolio,
+#profile {
+  background-color: #eceff1;
 }
 
 .heading {
   padding-top: 90px;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 32px;
 }
 
@@ -107,30 +108,30 @@ header {
 }
 
 .bg-1 {
-  background-image: url(img/sketch.jpg)
+  background-image: url(img/sketch.jpg);
 }
 
 .bg-2 {
-  background-image: url(img/websuku.png)
+  background-image: url(img/websuku.png);
 }
 
 .bg-3 {
-  background-image: url(img/write.jpg)
+  background-image: url(img/write.jpg);
 }
 
 .bg-4 {
-  background-image: url(img/webcamp.png)
+  background-image: url(img/webcamp.png);
 }
 
 .bg-5 {
-  background-image: url(img/talk.jpg)
+  background-image: url(img/talk.jpg);
 }
 
 .bg-6 {
-  background-image: url(img/webcamp-mother.png)
+  background-image: url(img/webcamp-mother.png);
 }
 
-.production:nth-child(3n){
+.production:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -156,7 +157,8 @@ header {
   content: "\f121";
 }
 
-.fa-gears:before, .fa-cogs:before {
+.fa-gears:before,
+.fa-cogs:before {
   content: "\f085";
 }
 
@@ -179,7 +181,7 @@ header {
   width: 50%;
 }
 
-.my-face{
+.my-face {
   background-image: url(img/my-icon.jpg);
   width: 250px;
   height: 250px;
@@ -242,7 +244,138 @@ footer {
 }
 
 .copyright {
-  color: #FAFAFA;
+  color: #fafafa;
   font-size: 16px;
   text-align: center;
+}
+
+/* ーーーーーーーレスポンシブ対応ーーーーーーーー */
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  header {
+    height: 50px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .menu-box {
+    width: 40px;
+    height: 40px;
+    margin-right: 5%;
+    border: 1px solid #fafafa;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+  }
+
+  .list-bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #fafafa;
+  }
+
+  .list-bar:first-child {
+    margin-top: 10px;
+  }
+
+  .nav-list {
+    display: none;
+    width: 100%;
+    line-height: 50px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .nav-list:last-child {
+    border: none;
+  }
+
+  #mv {
+    background-image: url(img/code.png);
+  }
+
+  .mv-title {
+    font-size: 40px;
+  }
+
+  .mv-text {
+    font-size: 18px;
+  }
+
+  .production-group {
+    width: 300px;
+  }
+
+  .production {
+    margin-right: 0px;
+  }
+
+  .sp-none {
+    display: none;
+  }
+
+  #feature {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .strength-group {
+    flex-flow: row wrap;
+    width: 320px;
+  }
+
+  .strength {
+    margin-top: 10px;
+    margin-right: 0px;
+  }
+
+  .strength:first-child {
+    margin-top: 0;
+  }
+
+  .profile-group {
+    flex-flow: row wrap;
+    text-align: center;
+  }
+
+  .profile-group .left-content {
+    margin-bottom: 20px;
+  }
+
+  .left-content {
+    width: 100%;
+  }
+
+  .right-content {
+    width: 100%;
+  }
+
+  .contact-group {
+    flex-flow: row wrap;
+    width: 100%;
+    text-align: center;
+  }
+
+  .left-contact-content {
+    width: 100%;
+  }
+
+  .right-contact-content {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .right-contact-content .fa {
+    font-size: 50px;
+    margin-right: 8px;
+  }
 }
